@@ -4,31 +4,56 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     background: hsl(240, 78%, 98%);
+    color: hsl(234, 14%, 74%);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: hsl(233, 13%, 49%);
 }
 
 .card {
     background-color: white;
     color: hsl(232, 13%, 33%);
+    height: 350px;
+    width: 270px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+}
+
+.card-professional {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    height: 350px;
 }
 
 .infos{
     color: hsl(233, 13%, 49%);
+    margin-bottom: 20px;
+}
+
+.infos p {
     margin-bottom: 10px;
 }
 
 .card-name {
     color:  hsl(233, 13%, 49%);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .price {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .professional {
     background-color: hsl(237, 63%, 64%);
     color: white;
     font-weight: 400;
+    padding: 30px;
 }
 
 .professional .infos  {
@@ -45,7 +70,7 @@ header {
 }
 
 main {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 button {
@@ -62,29 +87,32 @@ button {
     color: hsl(237, 63%, 64%);
 }
 
+hr.solid {
+    color: rgba(246, 246, 252, 0.25);
+    height: 0,5px;
+}
+
 .container-for-cards {
     display: flex;
     justify-content: center;
-}
-
-.card {
-    padding: 30px;
-    height: 300px;
-    width: 200px;
-    text-align: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .attribution { 
     font-size: 11px; text-align: center; 
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
  .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 30px;
+    top: 5px;
   }
   
   .switch input {
@@ -100,7 +128,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: hsl(237, 63%, 64%);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -108,8 +136,8 @@ button {
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 22px;
+    width: 22px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -118,17 +146,17 @@ button {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: hsl(237, 63%, 64%);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px hsl(237, 63%, 64%);
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
   }
   
   .slider.round {
@@ -139,9 +167,14 @@ button {
     border-radius: 50%;
   } 
 
-  .container-for-swith {
+  .container-for-switch {
       display: flex;
       justify-content: center;
+      margin-bottom: 50px;
+  }
+
+  .container-for-switch p {
+      margin: 15px;
   }
 
   @media only screen and (max-device-width: 375px) {
