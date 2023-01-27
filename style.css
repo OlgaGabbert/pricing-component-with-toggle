@@ -50,7 +50,7 @@ h1 {
 }
 
 .professional {
-    background-color: hsl(237, 63%, 64%);
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
     font-weight: 400;
     padding: 30px;
@@ -74,16 +74,19 @@ main {
 }
 
 button {
-   background-color: hsl(237, 63%, 64%);
+   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
    color: white;
-   padding: 10px 30px;
-   border-radius: 12px;
+   padding: 12px 30px;
+   border-radius: 10px;
    width: 100%;
-   border: none;
+   border: 0;
+   box-shadow: none;
+   outline: none;
 }
 
 .button-professional {
     background-color: white;
+    background-image: none;
     color: hsl(237, 63%, 64%);
 }
 
@@ -107,7 +110,7 @@ hr.solid {
     color: hsl(228, 45%, 44%); 
 }
 
- .switch {
+.switch {
     position: relative;
     display: inline-block;
     width: 50px;
@@ -128,7 +131,7 @@ hr.solid {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsl(237, 63%, 64%);
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -146,7 +149,7 @@ hr.solid {
   }
   
   input:checked + .slider {
-    background-color: hsl(237, 63%, 64%);
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   }
   
   input:focus + .slider {
@@ -180,3 +183,17 @@ hr.solid {
   @media only screen and (max-device-width: 375px) {
 
 }
+
+#bottom {
+    position: absolute;
+    left: 0px;
+    top: 420px;
+    z-index: -1;
+  }
+
+  #top {
+    position: absolute;
+    left: 1100px;
+    top: 0px;
+    z-index: -1;
+  }
