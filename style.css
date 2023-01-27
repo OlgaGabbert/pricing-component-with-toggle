@@ -79,15 +79,31 @@ button {
    padding: 12px 30px;
    border-radius: 10px;
    width: 100%;
-   border: 0;
+   border:0;
    box-shadow: none;
    outline: none;
+   letter-spacing: 0.1rem;
+}
+
+button:hover {
+    background-image: none;
+    background-color: white;
+    border: solid hsl(233, 13%, 49%);
+    border-width: thin;
+    color: hsl(233, 13%, 49%);
 }
 
 .button-professional {
     background-color: white;
     background-image: none;
     color: hsl(237, 63%, 64%);
+}
+
+.button-professional:hover {
+    color: white;
+    border: solid white;
+    border-width: thin;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
 hr.solid {
@@ -131,7 +147,7 @@ hr.solid {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient(hsl(236, 72%, 72%), hsl(237, 63%, 64%));
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -149,7 +165,7 @@ hr.solid {
   }
   
   input:checked + .slider {
-    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient(hsl(236, 72%, 78%), hsl(237, 63%, 85%));
   }
   
   input:focus + .slider {
