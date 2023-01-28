@@ -70,6 +70,7 @@ header {
 
 main {
     margin-bottom: 50px;
+    position: relative;
 }
 
 button {
@@ -203,14 +204,14 @@ hr.solid {
 #bottom {
     position: absolute;
     left: 0px;
-    top: 420px;
+    top: 200px;
     z-index: -1;
   }
 
   #top {
     position: absolute;
     left: 1100px;
-    top: 0px;
+    top: -200px;
     z-index: -1;
   }
 
@@ -235,7 +236,7 @@ hr.solid {
 
     #top {
         left: 210px;
-        top: -50px;
+        top: -225px;
     }
 
     #bottom {
