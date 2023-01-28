@@ -26,7 +26,6 @@ h1 {
 .card-professional {
     margin-top: -5px;
     margin-bottom: -5px;
-    height: 350px;
 }
 
 .infos{
@@ -83,6 +82,7 @@ button {
    box-shadow: none;
    outline: none;
    letter-spacing: 0.1rem;
+   background-color: black;
 }
 
 button:hover {
@@ -91,6 +91,7 @@ button:hover {
     border: solid hsl(233, 13%, 49%);
     border-width: thin;
     color: hsl(233, 13%, 49%);
+    cursor: pointer;
 }
 
 .button-professional {
@@ -103,12 +104,15 @@ button:hover {
     color: white;
     border: solid white;
     border-width: thin;
+    background-color: black;
+    cursor: pointer;
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
 hr.solid {
-    color: rgba(246, 246, 252, 0.25);
+    color: hsla(240, 78%, 98%, 0.25);
     height: 0,5px;
+    border-width: thin;
 }
 
 .container-for-cards {
@@ -196,10 +200,6 @@ hr.solid {
       margin: 15px;
   }
 
-  @media only screen and (max-device-width: 375px) {
-
-}
-
 #bottom {
     position: absolute;
     left: 0px;
@@ -213,3 +213,37 @@ hr.solid {
     top: 0px;
     z-index: -1;
   }
+
+  @media only screen and (max-device-width: 400px) {
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .container-for-cards {
+        flex-direction: column;
+    }
+
+    .card-professional {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .professional {
+        padding: 16px;
+    }
+
+    #top {
+        left: 210px;
+        top: -50px;
+    }
+
+    #bottom {
+        display: none;
+    }
+
+    footer {
+        margin-bottom: 30px;
+    }
+
+}
