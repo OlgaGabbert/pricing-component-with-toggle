@@ -74,16 +74,16 @@ main {
 }
 
 button {
-   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   background: linear-gradient(90deg,hsl(236, 72%, 79%), 35%, hsl(237, 63%, 64%));
    color: white;
    padding: 12px 30px;
    border-radius: 10px;
    text-decoration: none;
    width: 100%;
    border: none;
-   box-shadow: none;
+   box-shadow: none!important;
    margin: 0;
-   outline: none;
+   outline: none!important;
    letter-spacing: 0.1rem;
 }
 
@@ -108,7 +108,7 @@ button:hover {
     border-width: thin;
     background-color: black;
     cursor: pointer;
-    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient(90deg,hsl(236, 72%, 79%), 35%, hsl(237, 63%, 64%));
 }
 
 hr.solid {
